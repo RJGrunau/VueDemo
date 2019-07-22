@@ -42,9 +42,9 @@ header {
       align-items: baseline;
       li {
         margin: 20px;
-
         a,
-        a:visted {
+        a:visited,
+        a:active {
           text-decoration: none;
           color: rgb(26, 24, 24);
         }
