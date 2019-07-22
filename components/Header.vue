@@ -4,13 +4,13 @@
     <nav>
       <ul>
         <li>
-          <nuxt-link>Gallery</nuxt-link>
+          <nuxt-link to="/gallery">Gallery</nuxt-link>
         </li>
         <li>
-          <nuxt-link>Projects</nuxt-link>
+          <nuxt-link to="/projects">Projects</nuxt-link>
         </li>
         <li>
-          <nuxt-link>About</nuxt-link>
+          <nuxt-link to="/about">About</nuxt-link>
         </li>
       </ul>
     </nav>
@@ -22,4 +22,34 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+header {
+  width: 100vw;
+  height: 100px;
+  padding: 30px 10px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  nav {
+    width: 25%;
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: baseline;
+      li {
+        margin: 20px;
+
+        a,
+        a:visted {
+          text-decoration: none;
+          color: rgb(26, 24, 24);
+        }
+      }
+    }
+  }
+}
 </style>
