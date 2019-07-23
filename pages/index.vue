@@ -14,17 +14,10 @@
 
 <script>
 import Logo from "~/components/Logo.vue";
-import { mapState } from "vuex";
 
 export default {
   components: {
     Logo
-  },
-  computed: {
-    ...mapState(["flickerPhotoStream"])
-  },
-  mounted() {
-    this.$store.dispatch("getFlickerPhotoStream");
   }
 };
 </script>
