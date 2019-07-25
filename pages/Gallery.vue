@@ -1,7 +1,10 @@
 <template>
   <main>
-    yo!
-    <div class="photo-box"></div>
+    <div v-for="pic in flickrPhotos" :key="pic.id" class="photo-box">
+      <img :src="pic.url_m" :alt="pic.title" />
+
+      <h3>{{pic.title}}</h3>
+    </div>
   </main>
 </template>
 
@@ -10,10 +13,10 @@ import Header from "~/components/Header";
 import { mapState } from "vuex";
 export default {
   computed: {
-    ...mapState(["flickerPhotoStream"])
+    ...mapState(["flickrPhotos.photo"])
   },
   mounted() {
-    this.$store.dispatch("getFlickerPhotoStream");
+    this.$store.dispatch("getFlickrPhotos");
   }
 };
 </script>
@@ -23,5 +26,19 @@ main {
   width: 90%;
   height: calc(100vh - 100px);
   margin: 0 auto;
+  display: flex;
+  flex-flow: wrap row;
+
+  .photo-box {
+    width: 33.33%;
+    height: 350px;
+    margin: 20px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+    }
+  }
 }
 </style>
