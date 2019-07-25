@@ -1,9 +1,7 @@
 <template>
   <main>
     <div v-for="pic in flickrPhotos" :key="pic.id" class="photo-box">
-      <img :src="pic.url_m" :alt="pic.title" />
-
-      <h3>{{pic.title}}</h3>
+      <img :src="pic.url_m" :alt="pic.title" :height="pic.height_m" :width="pic.width_m" />
     </div>
   </main>
 </template>
@@ -30,14 +28,13 @@ main {
   flex-flow: wrap row;
 
   .photo-box {
-    width: 33.33%;
-    height: 350px;
+    width: 45.33%;
+
     margin: 20px;
+    text-align: center;
 
     img {
-      height: 100%;
-      width: 100%;
-      background-size: cover;
+      size: cover;
     }
   }
 }
