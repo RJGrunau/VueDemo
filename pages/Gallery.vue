@@ -13,7 +13,7 @@ import Header from "~/components/Header";
 import { mapState } from "vuex";
 export default {
   computed: {
-    ...mapState(["flickrPhotos.photo"])
+    ...mapState(["flickrPhotos"])
   },
   mounted() {
     this.$store.dispatch("getFlickrPhotos");
