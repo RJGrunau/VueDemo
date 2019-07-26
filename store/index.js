@@ -1,15 +1,15 @@
 export const state = () => ({
-  flickrPhotos: []
-  // githubProjects: []
+  flickrPhotos: [],
+  githubProjects: []
 });
 
 export const mutations = {
   updateFlickrPhotos: (state, payload) => {
     state.flickrPhotos = payload;
+  },
+  updateGithubProjects: (state, payload) => {
+    state.gitHubProjects = payload;
   }
-  // updateGithubProjects: (state, payload) => {
-  //   state.gitHubProjects = payload;
-  // }
 };
 
 export const actions = {
@@ -27,19 +27,29 @@ export const actions = {
     } catch (error) {
       console.log(error);
     }
+  },
+
+  async getGithubProjects({ state, commit }) {
+    if (state.githubProjects.length) return;
+
+    try {
+      let githubProjects = await fetch(
+        `https://api.github.com/users/rjgrunau/repos?page=1&per_page=10`
+      ).then(response => response.json());
+
+      githubProjects = githubProjects
+        .filter(project => project.fork === false)
+        .map(({ id, name, description, homepage, html_url }) => ({
+          id,
+          name,
+          description,
+          homepage,
+          html_url
+        }));
+
+      console.log(githubProjects);
+    } catch (error) {
+      console.log(error);
+    }
   }
-
-  // async getGithubProjects({ state, commit }) {
-  //   if (state.githubProjects.length) return;
-
-  //   try {
-  //     let githubProjects = await fetch(
-  //       `https://api.github.com/users/rjgrunau/repos?page=1`
-  //     ).then(response => response.json);
-
-  //     console.log(githubProjects);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // }
 };
