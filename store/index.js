@@ -8,7 +8,7 @@ export const mutations = {
     state.flickrPhotos = payload;
   },
   updateGithubProjects: (state, payload) => {
-    state.gitHubProjects = payload;
+    state.githubProjects = payload;
   }
 };
 
@@ -48,6 +48,7 @@ export const actions = {
         }));
 
       console.log(githubProjects);
+      commit("updateGithubProjects", githubProjects);
     } catch (error) {
       console.log(error);
     }

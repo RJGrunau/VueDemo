@@ -1,7 +1,11 @@
 <template>
   <main>
-    <section class="projects"></section>
-    <div></div>
+    <section class="projects">
+      <div v-for="project in githubProjects" :key="project.id">
+        <h3>{{project.name}}</h3>
+        <p>{{project.description}}</p>
+      </div>
+    </section>
   </main>
 </template>
 
