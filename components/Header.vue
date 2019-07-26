@@ -1,7 +1,9 @@
 <template>
   <header>
     <div class="logo">
-      <span role="logo" aria-label="logo">📸 Front-End Photo</span>
+      <nuxt-link class="logo-link" exact to="/">
+        <span role="logo" aria-label="logo">📸 Front-End Photo</span>
+      </nuxt-link>
     </div>
     <nav>
       <ul>
@@ -32,6 +34,12 @@ header {
 
   div {
     font-size: 2rem;
+    margin-left: 10px;
+    .logo-link,
+    .logo-link:visited {
+      text-decoration: none;
+      color: rgb(26, 24, 24);
+    }
 
     span {
       text-transform: uppercase;
