@@ -81,6 +81,12 @@ main {
     margin: 5px;
     padding: 10px;
     border-right: 2px solid #646464;
+
+    p{
+      margin: 5px;
+      margin-bottom: 10px;
+      padding: 5px;
+    }
   }
 }
 </style>
