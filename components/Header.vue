@@ -1,6 +1,8 @@
 <template>
   <header>
-    <div class="logo">Logo</div>
+    <div class="logo">
+      <span role="logo" aria-label="logo">📸 Front-End Photo</span>
+    </div>
     <nav>
       <ul>
         <li>
@@ -8,9 +10,6 @@
         </li>
         <li>
           <nuxt-link to="/projects">Projects</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/about">About</nuxt-link>
         </li>
       </ul>
     </nav>
@@ -31,6 +30,13 @@ header {
   justify-content: space-between;
   align-items: center;
 
+  div {
+    font-size: 2rem;
+
+    span {
+      text-transform: uppercase;
+    }
+  }
   nav {
     width: 25%;
 
@@ -47,6 +53,7 @@ header {
         a:active {
           text-decoration: none;
           color: rgb(26, 24, 24);
+          font-size: 1.3rem;
         }
       }
     }
