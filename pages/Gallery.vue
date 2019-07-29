@@ -26,7 +26,6 @@ main {
 
   .photo-box {
     width: 45.33%;
-
     margin: 20px;
     text-align: center;
 
