@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="background">
+    <div class="camera">
       <Camera />
     </div>
   </main>
@@ -24,7 +24,7 @@ main {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
 
-  .background {
+  .camera {
     grid-column: 3/7;
     grid-row: 2/6;
   }
