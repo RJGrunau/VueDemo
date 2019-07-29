@@ -1,3 +1,3 @@
-export default async (({store}) => {
-    await store.dipatch("getGithubProjects")
-})
+export default async ({ store }) => {
+  await store.dispatch("getGithubProjects");
+};
