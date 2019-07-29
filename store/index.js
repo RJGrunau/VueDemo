@@ -46,8 +46,6 @@ export const actions = {
           homepage,
           html_url
         }));
-
-      console.log(githubProjects);
       commit("updateGithubProjects", githubProjects);
     } catch (error) {
       console.log(error);

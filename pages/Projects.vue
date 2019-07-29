@@ -21,10 +21,10 @@ import { mapState } from "vuex";
 export default {
   computed: {
     ...mapState(["githubProjects"])
-  },
-  mounted() {
-    this.$store.dispatch("getGithubProjects");
   }
+  // mounted() {
+  //   this.$store.dispatch("getGithubProjects");
+  // }
 };
 </script>
 
@@ -82,7 +82,7 @@ main {
     padding: 10px;
     border-right: 2px solid #646464;
 
-    p{
+    p {
       margin: 5px;
       margin-bottom: 10px;
       padding: 5px;
