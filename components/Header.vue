@@ -2,7 +2,7 @@
   <header>
     <div class="logo">
       <nuxt-link class="logo-link" exact to="/">
-        <span role="logo" aria-label="logo">📸 Front-End Photo</span>
+        <h2 aria-label="logo">📸 Front-End Photo</h2>
       </nuxt-link>
     </div>
     <nav>
@@ -41,8 +41,9 @@ header {
       color: rgb(26, 24, 24);
     }
 
-    span {
+    h2 {
       text-transform: uppercase;
+      font-size: inherit;
     }
   }
   nav {
