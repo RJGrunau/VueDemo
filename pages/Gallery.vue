@@ -12,9 +12,6 @@ import { mapState } from "vuex";
 export default {
   computed: {
     ...mapState(["flickrPhotos"])
-  },
-  mounted() {
-    this.$store.dispatch("getFlickrPhotos");
   }
 };
 </script>
