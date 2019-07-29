@@ -22,9 +22,6 @@ export default {
   computed: {
     ...mapState(["githubProjects"])
   }
-  // mounted() {
-  //   this.$store.dispatch("getGithubProjects");
-  // }
 };
 </script>
 
