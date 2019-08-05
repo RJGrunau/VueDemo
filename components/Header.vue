@@ -32,7 +32,7 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  div {
+  .logo {
     font-size: 2rem;
     margin-left: 10px;
     .logo-link,
@@ -67,5 +67,9 @@ header {
       }
     }
   }
+}
+
+@media screen and (max-width: 800px){
+  
 }
 </style>

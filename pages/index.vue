@@ -2,8 +2,7 @@
   <main>
     <div class="name">
       <h1>Paul Holly</h1>
-      <h3>Failed Developer</h3>
-      <h3>Poor Photographer</h3>
+      <h2>A Vue Js Demo</h2>
     </div>
     <div class="camera">
       <Camera />
