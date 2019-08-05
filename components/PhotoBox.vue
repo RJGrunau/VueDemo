@@ -13,7 +13,7 @@ export default {
 <style lang="scss" scoped>
 .photo-box {
   width: 45.33%;
-  margin: 20px;
+  margin: 5px;
   text-align: center;
 
   img {
