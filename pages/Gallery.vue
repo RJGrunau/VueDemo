@@ -1,9 +1,6 @@
 <template>
   <main>
     <PhotoBox v-for="pic in flickrPhotos" :key="pic.id" :pic="pic" />
-    <!-- <div v-for="pic in flickrPhotos" :key="pic.id" class="photo-box">
-    <img :src="pic.url_m" :alt="pic.title" :height="pic.height_m" :width="pic.width_m" />-->
-    <!-- </div> -->
   </main>
 </template>
 
@@ -27,15 +24,5 @@ main {
   margin: 0 auto;
   display: flex;
   flex-flow: wrap row;
-
-  /* .photo-box {
-    width: 45.33%;
-    margin: 20px;
-    text-align: center;
-
-    img {
-      size: cover;
-    }
-  } */
 }
 </style>
