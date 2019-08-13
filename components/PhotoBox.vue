@@ -1,6 +1,6 @@
 <template>
   <figure class="photo-box">
-    <img :src="pic.url_m" :alt="pic.title" :height="pic.height_m" :width="pic.width_m" />
+    <img :src="pic.url_m" :alt="pic.description" :height="pic.height_m" :width="pic.width_m" />
   </figure>
 </template>
 

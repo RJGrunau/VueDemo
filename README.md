@@ -1,10 +1,16 @@
-# portfolio
+# Vue/NuxtJs Demo!
 
-> Kick ass nuxt portfolio
+Hello there. This is a demo for a intro to Vue talk I gave at my employer. The goal was to give the team an overview of VueJs before working on building out a portion of the project you see here. The work here is greatly informed by a Sarah Drasner's Smashing Talk in July of 2019.
+
+This project is bootstrapped with Nuxt Js, a Vue Js framework that gives us a lot of fun things like built in routing,
+
+## Getting Started
+
+You'll need a couple of things to follow along in during the live coding session. First off you'll need yarn installed. Secondly, you'll need a text editor set up. I use VSCode (but Sublime, or Atom work just as well), along with a suite of extensions to speed things up a bit, but you won't really need those. They're just nice. I use the Vue VSCode Snippets by Sarah Drasner. Bellow you will find instructions for getting a copy of this repo running.
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ yarn install
 
