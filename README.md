@@ -2,7 +2,9 @@
 
 Hello there. This is a demo for a intro to Vue talk I gave at my employer. The goal was to give the team an overview of VueJs before working on building out a portion of the project you see here. The work here is greatly informed by a Sarah Drasner's Smashing Talk in July of 2019.
 
-This project is bootstrapped with Nuxt Js, a Vue Js framework that gives us a lot of fun things like built in routing,
+This project is bootstrapped with Nuxt Js, a Vue Js framework that gives us a lot of fun things like built in routing and vuex store.
+
+You can find a working version of this demo here: [https://app.netlify.com/sites/suspicious-perlman-992b66/overview], Paul Holly Photographer
 
 ## Getting Started
 
