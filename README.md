@@ -3,6 +3,8 @@
 Hello there. Welcome to the VueJs Demo at iSoftStone. We'll be using this shell to build out a portfolio site for
 a fake photographer/ developer named Paul Holly. This Demo isn't mobile ready, but hey, we're just building out a demo.
 
+This project is bootstrapped with Nuxt Js, a Vue Js framework that gives us a lot of fun things like built in routing,
+
 ## Getting Started
 
 You'll need a couple of things to follow along in during the live coding session. First off you'll need yarn installed. Secondly, you'll need a text editor set up. I use VSCode (but Sublime, or Atom work just as well), along with a suite of extensions to speed things up a bit, but you won't really need those. They're just nice. I use the Vue VSCode Snippets by Sarah Drasner. Bellow you will find instructions for getting a copy of this repo running.

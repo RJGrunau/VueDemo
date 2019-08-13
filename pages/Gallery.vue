@@ -1,23 +1,7 @@
-<template>
-  <main>
-    <PhotoBox v-for="pic in flickrPhotos" :key="pic.id" :pic="pic" />
-    <!-- <div v-for="pic in flickrPhotos" :key="pic.id" class="photo-box">
-    <img :src="pic.url_m" :alt="pic.title" :height="pic.height_m" :width="pic.width_m" />-->
-    <!-- </div> -->
-  </main>
-</template>
+<template></template>
 
 <script>
-import PhotoBox from "~/components/PhotoBox";
-import { mapState } from "vuex";
-export default {
-  components: {
-    PhotoBox
-  },
-  computed: {
-    ...mapState(["flickrPhotos"])
-  }
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>
@@ -28,7 +12,7 @@ main {
   display: flex;
   flex-flow: wrap row;
 
-  /* .photo-box {
+  .photo-box {
     width: 45.33%;
     margin: 20px;
     text-align: center;
@@ -36,6 +20,6 @@ main {
     img {
       size: cover;
     }
-  } */
+  }
 }
 </style>
