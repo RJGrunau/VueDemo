@@ -3,7 +3,9 @@
 Hello there. Welcome to the VueJs Demo at iSoftStone. We'll be using this shell to build out a portfolio site for
 a fake photographer/ developer named Paul Holly. This Demo isn't mobile ready, but hey, we're just building out a demo.
 
-This project is bootstrapped with Nuxt Js, a Vue Js framework that gives us a lot of fun things like built in routing,
+This project is bootstrapped with Nuxt Js, a Vue Js framework that gives us a lot of fun things like built in routing, and vuex for managing state.
+
+You can find a working version of this demo here: [Paul Holly Photographer](https://app.netlify.com/sites/suspicious-perlman-992b66/overview)
 
 ## Getting Started
 
