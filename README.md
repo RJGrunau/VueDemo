@@ -4,7 +4,7 @@ Hello there. This is a demo for a intro to Vue talk I gave at my employer. The g
 
 This project is bootstrapped with Nuxt Js, a Vue Js framework that gives us a lot of fun things like built in routing and vuex store.
 
-You can find a working version of this demo here: [https://app.netlify.com/sites/suspicious-perlman-992b66/overview], Paul Holly Photographer
+You can find a working version of this demo here: (https://app.netlify.com/sites/suspicious-perlman-992b66/overview)[Paul Holly Photographer]
 
 ## Getting Started
 
